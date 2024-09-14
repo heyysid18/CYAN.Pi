@@ -9,7 +9,17 @@ import Spline from '@splinetool/react-spline';
 function App() {
   return (
       <div>
-        <Spline scene="https://prod.spline.design/nOq060s-5MXh7yH8/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/nOq060s-5MXh7yH8/scene.splinecode" 
+        frameBorder="0"
+        width="100%"
+        height="100%"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          zIndex: -1, // Ensure it's behind other content
+        }}
+        allowFullScreen/>
       <Header />
       <Home />
       <Footer />
